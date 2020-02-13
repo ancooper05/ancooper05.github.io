@@ -350,9 +350,6 @@
 
 /* End normalize */
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Lemonada', cursive;
@@ -380,6 +377,7 @@ body {
     padding-top: 50%;
     padding-bottom: 30%;
     background-color: #0067B3;
+    background-size: cover;
 }
 
 .background_bottom {
@@ -413,9 +411,9 @@ padding: 0 10% 0 20%;
 background: url(img/heartsbirds.svg) no-repeat top center;
 background-size: contain;
 background-origin: content-box;
-max-width: 98%;
+max-width: 100%;
 position: absolute;
-overflow: hidden;
+overflow: auto;
 top: 0;
 left: 0;
 right: 0;
@@ -427,9 +425,9 @@ padding: 0 10% 0 20%;
 background: url(img/lovebirds.svg) no-repeat top center;
 background-size: contain;
 background-origin: content-box;
-max-width: 98%;
+max-width: 100%;
 position: absolute;
-overflow: hidden;
+overflow: auto;
 top: 0;
 left: 0;
 right: 0;
@@ -441,9 +439,9 @@ padding: 0 10% 0 20%;
 background: url(img/wingsbirds.svg) no-repeat top center;
 background-size: contain;
 background-origin: content-box;
-max-width: 98%;
+max-width: 100%;
 position: absolute;
-overflow: hidden;
+overflow: auto;
 top: 0;
 left: 0;
 right: 0;
@@ -455,9 +453,9 @@ padding: 0 10% 0 20%;
 background: url(img/rainbow.svg) no-repeat top center;
 background-size: contain;
 background-origin: content-box;
-max-width: 98%;
+max-width: 100%;
 position: absolute;
-overflow: hidden;
+overflow: auto;
 top: 0;
 left: 0;
 right: 0;
@@ -472,7 +470,7 @@ background-size: contain;
 background-origin: content-box;
 max-width: 90%;
 position: absolute;
-overflow: hidden;
+overflow: auto;
 top: 0;
 left: 0;
 right: 0;
@@ -500,7 +498,7 @@ z-index: 10;
   background-origin: content-box;
   max-width: 90%;
   position: absolute;
-  overflow: hidden;
+  overflow: auto;
   top: 0;
   left: 0;
   right: 0;
@@ -591,6 +589,21 @@ header {
   animation-direction: alternate;
 }
 
+footer {
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: bottom;
+
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  z-index: 10;
+}
+
 /* styles for letter */
 
 .content {
@@ -602,12 +615,6 @@ header {
   text-align: justify;
 }
 
-footer {
-  font-size: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: bottom;
-}
 
 .background {
   background-color: #0067B3;
