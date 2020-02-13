@@ -396,7 +396,7 @@ header {
   margin: 0 auto;
   text-align: center;
   color: aliceblue;
-  font-size: 150%;
+  font-size: 110%;
 
   background: url(img/heartheader.svg) no-repeat top center;
   background-size: contain;
@@ -413,7 +413,7 @@ padding: 0 10% 0 20%;
 background: url(img/heartsbirds.svg) no-repeat top center;
 background-size: contain;
 background-origin: content-box;
-max-width: 95%;
+max-width: 98%;
 position: absolute;
 overflow: hidden;
 top: 0;
@@ -427,7 +427,7 @@ padding: 0 10% 0 20%;
 background: url(img/lovebirds.svg) no-repeat top center;
 background-size: contain;
 background-origin: content-box;
-max-width: 95%;
+max-width: 98%;
 position: absolute;
 overflow: hidden;
 top: 0;
@@ -441,7 +441,7 @@ padding: 0 10% 0 20%;
 background: url(img/wingsbirds.svg) no-repeat top center;
 background-size: contain;
 background-origin: content-box;
-max-width: 95%;
+max-width: 98%;
 position: absolute;
 overflow: hidden;
 top: 0;
@@ -455,7 +455,7 @@ padding: 0 10% 0 20%;
 background: url(img/rainbow.svg) no-repeat top center;
 background-size: contain;
 background-origin: content-box;
-max-width: 95%;
+max-width: 98%;
 position: absolute;
 overflow: hidden;
 top: 0;
@@ -616,7 +616,7 @@ footer {
 
 .h1_letter {
   text-transform: uppercase;
-  font-size: 140%;
+  font-size: 110%;
 }
 
 
