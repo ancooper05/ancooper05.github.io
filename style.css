@@ -352,16 +352,10 @@
 
 
 body {
-    font-family: 'Lemonada', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 100%;
-    text-transform: uppercase;
 }
 
-.font {
-  font-family: 'Caveat', cursive;
-  font-size: 100%;
-  text-transform: none;
-}
 /* Background */
 
 .background_top {
@@ -380,21 +374,14 @@ body {
     background-size: cover;
 }
 
-.background_bottom {
-  position: relative;
-    background: url(img/clouds_03.png) bottom no-repeat;
-    background-color: #0067B3;
-    background-size: cover;
-    background-origin: content-box;
-    height: 100vh;
-}
+
 /* End background */
 
 header {
   margin: 0 auto;
   text-align: center;
   color: aliceblue;
-  font-size: 110%;
+  font-size: 120%;
 
   background: url(img/heartheader.svg) no-repeat top center;
   background-size: contain;
@@ -404,50 +391,7 @@ header {
   border-bottom-right-radius: 60%;
 }
 
-/* Position img */
 
-.hearts {
-padding: 0 10% 0 20%;
-background: url(img/heartsbirds.svg) no-repeat top center;
-background-size: contain;
-background-origin: content-box;
-max-width: 100%;
-position: absolute;
-overflow: auto;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 10;
-}
-.lovebirds {
-padding: 0 10% 0 20%;
-background: url(img/lovebirds.svg) no-repeat top center;
-background-size: contain;
-background-origin: content-box;
-max-width: 100%;
-position: absolute;
-overflow: auto;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 9;
-}
-.wingsbirds {
-padding: 0 10% 0 20%;
-background: url(img/wingsbirds.svg) no-repeat top center;
-background-size: contain;
-background-origin: content-box;
-max-width: 100%;
-position: absolute;
-overflow: auto;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 10;
-}
 .rainbow {
 padding: 0 10% 0 20%;
 background: url(img/rainbow.svg) no-repeat top center;
@@ -464,48 +408,49 @@ z-index: 8;
 }
 
 .birdletter {
-padding: 0 10% 0 20%;
+
 background: url(img/birdbottom.svg) no-repeat center;
 background-size: contain;
 background-origin: content-box;
-max-width: 90%;
+max-width: 100%;
 position: absolute;
 overflow: auto;
-top: 0;
+top: 40%;
 left: 0;
-right: 0;
+right: 10%;
 bottom: 0; 
 z-index: 10;
 }
 
 
-.test_class {  
-  position: absolute;  
-  top: 0;  
-  left: 0;  
-  display: block;  
-  width: 100%;  
-  height: 100%;  
-  text-decoration: none;  
-  z-index: 11;  
-  cursor: pointer;
-}
-
 .wingsletter {
-  padding: 0 10% 0 20%;
-  background: url(img/wingsletter.svg) no-repeat center;
+
+ background: url(img/wingsletter.svg) no-repeat center;
   background-size: contain;
   background-origin: content-box;
-  max-width: 90%;
+  max-width: 100%;
   position: absolute;
   overflow: auto;
-  top: 0;
+  top: 40%;
   left: 0;
-  right: 0;
+  right: 10%;
   bottom: 0; 
   z-index: 10;
   }
+
+  .test_class {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    display: block;  
+    width: 100%;  
+    height: 100%;  
+    text-decoration: none;  
+    z-index: 11;  
+    cursor: pointer;
+  }
 /* End position img */
+
 
 
 /* Animation */
@@ -569,8 +514,8 @@ header {
 }
 
 @keyframes birdletter {
-  from {transform: translateY(0);}
-  to {transform: translateY(1%);}
+  from {transform: translate(0);}
+  to {transform: translate(1%);}
   }
 .birdletter {
   animation-name: birdletter;
@@ -579,15 +524,25 @@ header {
   animation-direction: alternate;
 }
 @keyframes wingsletter {
-  from {transform: translateY(0);}
-  to {transform: translateY(1%);}
+  from {transform: translate(0);}
+  to {transform: translate(1%);}
   }
 .wingsletter {
   animation-name: wingsletter;
-  animation-duration: .15s;
+  animation-duration: .2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+@keyframes bird_say {
+  from {opacity: 0;}
+  to {opacity: 1;
+    transform: rotate(2%); 
+    background-color: rgba(177, 195, 221, 0.5); 
+    background-size: contain;}
+  }
+
+
 
 footer {
   font-size: 100%;
@@ -608,7 +563,7 @@ footer {
 
 .content {
   margin: -5% auto 0 auto;
-  padding: 10%;
+  padding: 10% 10% 0% 10%;
   font-size: 200%;
   color: #ffffff;
   line-height: 1.1;
@@ -617,14 +572,11 @@ footer {
 
 
 .background {
+  position: relative;
   background-color: #0067B3;
-  background-size: contain;
+  background-size: cover;
 }
 
-.h1_letter {
-  text-transform: uppercase;
-  font-size: 110%;
-}
 
 
 @keyframes heart {
@@ -633,20 +585,64 @@ footer {
 }
 
 .heart_footer {
-  position: absolute;
-  max-width: 40%;
-  overflow: auto;
-  top: 26%;
-  left: 30%;
-  right: 0;
-  bottom: 0; 
-  z-index: 10;
+  margin: 0 auto;
+  max-width: 20%;
+
 
   animation-name: heart;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 
+}
+
+
+/* Position img */
+
+.birds {
+  padding-top: 8%;
+  padding-bottom: 5%;
+
+}
+
+.hearts {
+  max-width: 60%;
+background: url(img/heartsbirds.svg) no-repeat top center;
+background-size: contain;
+background-origin: content-box;
+position: absolute;
+overflow: auto;
+top: 18%;
+left: 20%;
+right: 0;
+bottom: 5%;
+z-index: 10;
+}
+.lovebirds {
+  max-width: 60%;
+background: url(img/lovebirds.svg) no-repeat top center;
+background-size: contain;
+background-origin: content-box;
+position: absolute;
+overflow: auto;
+top: 18%;
+left: 20%;
+right: 0;
+bottom: 5%;
+z-index: 9;
+}
+.wingsbirds {
+  max-width: 60%;
+background: url(img/wingsbirds.svg) no-repeat top center;
+background-size: contain;
+background-origin: content-box;
+position: absolute;
+overflow: auto;
+top: 18%;
+left: 20%;
+right: 0;
+bottom: 5%;
+z-index: 10;
 }
 
 
